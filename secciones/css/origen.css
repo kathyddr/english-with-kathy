@@ -130,6 +130,7 @@ img:hover {
 # Header
 --------------------------------------------------------------*/
 .header {
+  background: #fff;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   z-index: 997;
