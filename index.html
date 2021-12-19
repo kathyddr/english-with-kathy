@@ -18,6 +18,8 @@
   <link href="secciones/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="secciones/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="secciones/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Insertar -->
   <link href="secciones/css/origen.css" rel="stylesheet">
 </head>
@@ -38,7 +40,7 @@
           <li class="dropdown"><a href="secciones/recursos.html"><span>Recursos GRATIS</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="secciones/test.html">Test de nivel</a></li>
-              <li class="dropdown"><a href="#"><span>Ejercicios</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a href="secciones/recursos.html#ejercicios"><span>Ejercicios</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="secciones/recursos.html#beginner">Beginner</a></li>
                   <li><a href="secciones/recursos.html#elementary">Elementary</a></li>
@@ -58,24 +60,86 @@
   <main>
     <!--Contenido visible-->
         <h1 id="cursos"   class="centrarText">Cursos de inglés</h1> <br>
-        <img src="secciones/imagenes/6.svg" alt="" srcset="" width="100%" height="100%">
-             <!-- ======= Por que estuidiar? ======= -->
+        <!--Carousel-->
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="hover11" src="secciones/imagenes/6.svg" alt="Adventure" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Adventure</h3>
+        <p>Aventura asegurada!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="hover11"  src="secciones/imagenes/16.jpg" alt="Diversity" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Diversity and fun</h3>
+        <p>Hay un espacio para todxs</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="hover11" src="secciones/imagenes/17.jpg" alt="Learn" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Learn</h3>
+        <p>Aprendé con nuestro método de aprendizaje!</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon">NEXT</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon">Previous</span>
+  </button>
+</div>
+</div>
+     <!-- ======= Seccion contar ====== -->
+ <section id="counts" class="counts section-bg">
+  <div class="container">
+    <div class="row counters">
+      <div class="col-lg-3 col-6 text-center">
+        <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter"></span>
+        <p>Estudiantes</p>
+      </div>
+      <div class="col-lg-3 col-6 text-center">
+        <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter"></span>
+        <p>Cursos</p>
+      </div>
+      <div class="col-lg-3 col-6 text-center">
+        <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
+        <p>Eventos</p>
+      </div>
+      <div class="col-lg-3 col-6 text-center">
+        <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+        <p>Profesores</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Fin de la seccion contar -->
+    <!-- ======= Seccion Por que estudiar? ======= -->
              <section id="values" class="values">
         <h2 class=" agrand centrarText">Por qué estudiar con nosotros?</h2>
-        <ol class="colorLista grid">
-            <li class="box"><span class="textUno">01</span>  Al ser online, vos elegís cuando y donde estudiar.<br>
-            <img src="secciones/imagenes/11.webp" alt="Cuando y donde estudiar"></li>
-            <li class="box"><span class="textUno">02</span>  Porque participarás de Aulas Virtuales “EN VIVO” programadas con los mejores profesores. <br>
-            <img src="secciones/imagenes/12.webp" alt="Aulas Virtuales EN VIVO"></li>
-            <li class="box"><span class="textUno">03</span> Porque las clases serán grabadas para que las veas todas las veces que lo necesites.<br>
-            <img src="secciones/imagenes/13.webp" alt="Clases grabadas"></li>
+        <div data-aos="fade-up" data-aos-duration="1000" class="flex-container colorLista">
+          <div class="box flex-item-left"><span class="textUno">01</span>  Al ser online, vos elegís cuando y donde estudiar. <img src="secciones/imagenes/11.webp" alt="Cuando y donde estudiar"></div>
+          <div class="box flex-item-center"><span class="textUno">02</span>  Porque participarás de Aulas Virtuales “EN VIVO” programadas con los mejores profesores.<img src="secciones/imagenes/12.webp" alt="Aulas Virtuales EN VIVO"></div>
+          <div class="box flex-item-right"><span class="textUno">03</span> Porque las clases serán grabadas para que las veas todas las veces que lo necesites.<img src="secciones/imagenes/13.webp" alt="Clases grabadas"></div>
         </ol>
-        <div class="centrarText marg">
+      </div>
+  <!-- ======= Boton quiero comenzar ======= -->
+        <div class="centrarText marg" id="container">
            <button class="boton"><a href="secciones/contacto.html" target="_blank">Quiero comenzar HOY</a></button>
         </div>
        </section>
+         <!--Fin de la seccion  -->
              <!-- ======= Nuestro método ======= -->
-        <div class="colorFondoSN margenArriba flexLista">
+        <div data-aos="fade-up" data-aos-duration="1000" class="colorFondoSN margenArriba flexLista">
         <h3 class="metodText centrarText">Sobre nuestro método</h3>
     <ol class="centrarText">
         <li><span class="textUno centrarText col-4 container">01</span> Observa y aprende</li>
@@ -88,15 +152,20 @@
         <img src="secciones/imagenes/4.svg" width="300" height="300" alt="Revisión semanal y mensual de progreso">
     </ol>
     </div>
-         <!-- ======= Metodo adquisicion ======= -->
-    <div class="kbd container-fluid">
-        <h4 class="centrarText h4">Método Adquisición/Aprendizaje</h4><br>
+         <!-- ======= Seccion Metodo adquisicion ======= -->
+         <section>
+    <div data-aos="fade-up" data-aos-duration="1000" class="kbd container-fluid">
+        <h4 class="centrarText">Método Adquisición/Aprendizaje</h4><br>
         <p>
-           Nuestro método se basa en la<mark> manera en la que aprenden los niños de primaria</mark>, de forma natural. Por eso se fomenta la utilización del inglés todo el tiempo en el aula. También se estimula el trabajo fuera del aula con contenidos nativos (lecturas, vídeos…).<br> Children acquire language innately through exposure. They become familiar with the language through an immersive system of contextual dialogues, communicative exercises, the development of communication strategies, exposure to native materials and games. Gradually, they consolidate their learning, developing an understanding of grammatical structures and rules, through practice and repetition with games and other activities.
+           Nuestro método se basa en la<mark> manera en la que aprenden los niños de primaria</mark>, de forma natural. Por eso se fomenta la utilización del inglés todo el tiempo en el aula. También se estimula el trabajo fuera del aula con contenidos nativos (lecturas, vídeos…).<br>
         </p>
+        <img class="imagen1" src="https://eligeeducar.cl/content/uploads/2017/08/metodologias-de-ensen%CC%83anza-1920x870.jpg" alt="aprendizaje">
+        <img class="imagen2" src="https://www.researchgate.net/profile/Jaime-Reyes-9/publication/331288046/figure/fig1/AS:729252232196096@1550878689227/Figura-2-Elementos-del-aprendizaje-basado-en-fenomenos-Fuente-Elaboracion-propia-de.ppm" alt="" width="45%" height="45%">
     </div>
+  </section>
     <section class="fondoAprender">
-        <span>Un poco de lo que aprenderás será:</span>
+      <div data-aos="fade-up" data-aos-duration="1000">
+        <span class="textoAprender">Un poco de lo que aprenderás será:</span>
         <ol class="tick">
             <li class="lista-1"> Cómo prepararte para tu viaje y aprender inglés incluso antes de salir.</li>
             <li class="lista-2"> Cómo aprender inglés haciendo cosas que te gustan como leer y escuchar música.</li>
@@ -104,10 +173,86 @@
             <li class="lista-4"> Una lista completa de las frases que no te pueden faltar, y palabras en inglés que todos los viajeros deberían conocer.</li>
             <li class="lista-5"> Cómo poder viajar si hablas muy poquito inglés o incluso si no lo hablas.</li>
         </ol>
+      </div>
     <div class="centrarText">
         <button class="boton"><a href="secciones/contacto.html" target="_blank">Quiero comenzar HOY</a></button>
     </div>
     </section>
+    <!-- ======= Fin de Seccion Metodo adquisicion ======= -->
+     <!-- ======= Seccion averigua tu nivel ======= -->
+<section class="averigua">
+  <div data-aos="fade-up" data-aos-duration="1000">
+  <p>Averiguá tu nivel de inglés en unos simples pasos</p>
+  <div class="centrarText marg">
+    <button class="boton"><a href="secciones/test.html" target="_blank">Tomar test</a></button>
+</div>
+</div>
+</section>
+   <!-- ======= Seccion testimonios ======= -->
+<section class="fondoestimonio">
+  <h4 class="centrarText">Testimonios</h4>
+<div data-aos="fade-up" data-aos-duration="1000" class="d-flex align-items-center py-5 mh-100"> <a class="carousel-control-prev text-decoration-none " href="#mycarousel" role="button" data-bs-slide="prev">
+  <div class="d-flex flex-column justify-content-center me-2 ms-auto left">PREV<span class="fas fa-arrow-left"></span> </div> <span class="sr-only"></span>
+</a>
+<div class="container fondoTestimonio">
+  <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-bs-target="#mycarousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#mycarousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#mycarousel" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <div class="row">
+                  <div class="col-lg-6 "> <img src="https://images.pexels.com/photos/8052808/pexels-photo-8052808.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="d-block w-100" alt="..."> </div>
+                  <div class="col-lg-6 ">
+                      <div class=" d-flex flex-column justify-content-center my-5 px-3">
+                          <p class="review text-center">"Hace años atrás, asistí de forma presencial y me encanto la atención desde lo administrativo, la recepción y los profesores, solo tengo buenos recuerdos por ello decidí continuar"</p>
+                          <div class="name d-flex align-items-center justify-content-center"> <span class="fas fa-minus pe-1"></span>
+                              <p class="m-0">Rodolfo Martin</p>
+                          </div>
+                          <p class="job text-center">02.03.2021</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="row">
+                  <div class="col-lg-6 "> <img  src="https://conversinginenglish.com/cie/images/rebecas.jpg" class="d-block w-100 hover11" alt="..."> </div>
+                  <div class="col-lg-6 ">
+                      <div class=" d-flex flex-column justify-content-center my-5 px-3">
+                          <p class="review text-center">"Me atrapó , nunca antes me senti tan entusiasmada con el aprendizaje del idioma, y lo habia intentado muchas veces....clases particulares, academias no lograron lo que English with Kathy ... Muy muy bueno"</p>
+                          <div class="name d-flex align-items-center justify-content-center"> <span class="fas fa-minus pe-1"></span>
+                              <p class="m-0">Ana Maria</p>
+                          </div>
+                          <p class="job text-center">09.07
+                            2021
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="row">
+                  <div class="col-lg-6 "> <img src="https://education.uic.edu/wp-content/uploads/sites/137/2018/02/Programs-MESA-Students-Phelps-3.jpg" class="d-block w-100" alt="..."> </div>
+                  <div class="col-lg-6 ">
+                      <div class=" d-flex flex-column justify-content-center my-5 px-3">
+                          <p class="review text-center">"Estoy conforme con la dinámica de las clases."</p>
+                          <div class="name d-flex align-items-center justify-content-center"> <span class="fas fa-minus pe-1"></span>
+                              <p class="m-0">Joy Smith</p>
+                          </div>
+                          <p class="job text-center">27.02.2021</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div> <a class="carousel-control-next text-decoration-none " href="#mycarousel" role="button" data-bs-slide="next">
+  <div class="d-flex flex-column justify-content-center right ms-2 me-auto"> NEXT <span class="fas fa-arrow-right"></span> </div> <span class="sr-only"></span>
+</a>
+</div>
+</section>
 <!-- ======= Pie de página ======= -->
 <footer id="footer" class="footer">
   <div class="footer-newsletter">
@@ -162,18 +307,22 @@
       Designed by <a href="#/">Kathy</a>
     </div>
   </div>
+  </main>
 </footer><!-- Fin pie de página -->
-<!-- Volver arriba -->
-<a href="index.html#cursos" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-<!-- Vendor -->
-<script src="secciones/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-<script src="secciones/vendor/aos/aos.js"></script>
-<script src="secciones/vendor/php-email-form/validate.js"></script>
-<script src="secciones/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="secciones/vendor/purecounter/purecounter.js"></script>
-<script src="secciones/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="secciones/vendor/glightbox/js/glightbox.min.js"></script>
-<!-- Insertar JS -->
-<script src="secciones/js/main.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="secciones/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
