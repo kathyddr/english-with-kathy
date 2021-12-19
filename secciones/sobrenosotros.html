@@ -35,7 +35,7 @@
           <li class="dropdown"><a href="recursos.html"><span>Recursos GRATIS</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="test.html">Test de nivel</a></li>
-              <li class="dropdown"><a href="#"><span>Ejercicios</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a href="recursos.html#ejercicios"><span>Ejercicios</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="recursos.html#beginner">Beginner</a></li>
                   <li><a href="recursos.html#elementary">Elementary</a></li>
@@ -53,24 +53,20 @@
     </div>
   </header>
     <main>
-        <br>
-        <br>
-        <br>
-        <br>
         <!--Contenido visible-->
         <h1 class="centrarText">Sobre nosotros</h1>
         <div class="centrarText">
         <h2 >Por qué estudiar con nosotros?</h2>
             <ol>
-                <li><span class="textUno">01</span>  Al ser online, vos elegís cuando y donde estudiar.</li>
-                <img src="imagenes/11.webp" alt="">
-                <li><span class="textUno">02</span>  Porque participarás de Aulas Virtuales “EN VIVO” programadas con los mejores profesores.</li>
-                <img src="imagenes/12.webp" alt="">
-                <li><span class="textUno">03</span> Porque las clases serán grabadas para que las veas todas las veces que lo necesites.</li>
-                <img src="imagenes/13.webp" alt="">
+              <div data-aos="fade-up" data-aos-duration="1000"> <li><span class="textUno">01</span>  Al ser online, vos elegís cuando y donde estudiar.</li>
+                <img src="imagenes/11.webp" alt=""> </div>
+                <div data-aos="fade-up" data-aos-duration="1000"> <li><span class="textUno">02</span>  Porque participarás de Aulas Virtuales “EN VIVO” programadas con los mejores profesores.</li>
+                <img src="imagenes/12.webp" alt=""></div>
+                <div data-aos="fade-up" data-aos-duration="1000"><li><span class="textUno">03</span> Porque las clases serán grabadas para que las veas todas las veces que lo necesites.</li>
+                <img src="imagenes/13.webp" alt=""></div>
             </ol>
         </div>
-       <div class="centrarText colorFondoS">
+       <div data-aos="fade-up" data-aos-duration="1000" class="centrarText colorFondoS">
             <h3>Quienes somos?</h3>
             <p  class="marg">Somos una institución dedicada a la enseñanza del inglés de una forma fácil e innovadora.</p><br>
             <img src="imagenes/5.svg" alt="institución" width="100%" height="100%">
@@ -131,8 +127,6 @@
       </div>
     </div>
   </footer><!-- Fin pie de página -->
-  <!-- Volver arriba -->
-  <a href="sobrenosotros.html#header" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <!-- Vendor -->
   <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
   <script src="vendor/aos/aos.js"></script>
@@ -143,5 +137,9 @@
   <script src="vendor/glightbox/js/glightbox.min.js"></script>
   <!-- Insertar JS -->
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
   </html>
